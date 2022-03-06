@@ -1,0 +1,7 @@
+{
+    "PGHOST": "localhost",
+    "PGUSER": "abraxsas",
+    "PGPASSWORD": "toor",
+    "PGDATABASE": "zad4_db",
+    "PGPORT": 5432
+}
