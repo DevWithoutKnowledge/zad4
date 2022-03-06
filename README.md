@@ -29,25 +29,25 @@ Project is created with:
 * In the server application, provide methods that enable all business logic methods to be executed over HTTP.
      * Recommended API structure:  
           * Product:  
-                1. `GET app_url / products` - returns all products  
-                2. `GET app_url / products / id` - returns product data with a specific identifier  
-                3. `POST app_url / products` - adds a product to the database (parameters in the request body)  
-                4. `PUT app_url / products / id` - updates the product with a specific identifier, other product parameters in the request body. Or you can PUT app_url / products with all parameters in the body of the request.  
+                1.`GET app_url / products` - returns all products  
+                2.`GET app_url / products / id` - returns product data with a specific identifier  
+                3.`POST app_url / products` - adds a product to the database (parameters in the request body)  
+                4.`PUT app_url / products / id` - updates the product with a specific identifier, other product parameters in the request body. Or you can PUT app_url / products with all parameters in the body of the request.  
           * Category:  
-                1. `GET app_url / categories` - returns all categories  
+                1.`GET app_url / categories` - returns all categories  
           * Orders:  
-                1. `GET app_url / orders` - returns all orders  
-                2. `POST app_url / orders` - adds an order (parameters in the request body)  
-                3. `PUT app_url / orders / id / state` - change of order status with the given identifier. Other variants are allowed, eg PUT app_url / orders / id with a new state in the request body.  
-                4. `GET app_url / orders / status / id` - retrieve orders with a specific status  
+                1.`GET app_url / orders` - returns all orders  
+                2.`POST app_url / orders` - adds an order (parameters in the request body)  
+                3.`PUT app_url / orders / id / state` - change of order status with the given identifier. Other variants are allowed, eg PUT app_url / orders / id with a new state in the request body.  
+                4.`GET app_url / orders / status / id` - retrieve orders with a specific status  
           * Order Status:  
-                1. `GET app_url / status` - returns all possible order statuses  
+                1.`GET app_url / status` - returns all possible order statuses  
 
 * Implement error handling on the server side, in particular, handle the situations (it is recommended to send a response in the form of JSON + appropriate HTTP code):  
      * Product:  
           1. Attempted to add with negative price or weight, zero weight and price, blank description or name.  
-          2. Attempting to change field values ​​to incorrect  
-          3. Attempt to change field values ​​for a non-existent identifier  
+          2. Attempting to change field values to incorrect  
+          3. Attempt to change field values for a non-existent identifier  
      * Order:  
           1. Attempting to add an order with empty user fields  
           2. Attempting to add an order with incorrectly filled user fields (e.g. phone number contains letters)  
