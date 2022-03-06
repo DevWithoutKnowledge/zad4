@@ -7,10 +7,10 @@
 ## General info
 Basic backend application in JavaScript for my Interpreted language applications subject.
 ## Technologies
-Project is created with:    
-    * knex version: 0.21.15 
-    * koa version: 2.13.0 
-    * postgresql version: 8.5.1
+Project is created with:      
+    * knex version: 0.21.15   
+    * koa version: 2.13.0   
+    * postgresql version: 8.5.1  
 
 ## App requirements:
 
