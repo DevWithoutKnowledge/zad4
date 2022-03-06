@@ -21,7 +21,7 @@ Basic backend application in JavaScript for my Interpreted language applications
     * Order Status: download a complete list
 
 * In the server application, provide methods that enable all business logic methods to be executed over HTTP.
-      * Recommended API structure:
+      * Recommended API structure:  
           * Product:  
                      1.`GET app_url / products` - returns all products  
                      2.`GET app_url / products / id` - returns product data with a specific identifier  
@@ -37,7 +37,7 @@ Basic backend application in JavaScript for my Interpreted language applications
           * Order Status:  
                      1.`GET app_url / status` - returns all possible order statuses  
 
-* Implement error handling on the server side, in particular, handle the situations (it is recommended to send a response in the form of JSON + appropriate HTTP code):
+* Implement error handling on the server side, in particular, handle the situations (it is recommended to send a response in the form of JSON + appropriate HTTP code):  
           * Product:  
                     1.Attempted to add with negative price or weight, zero weight and price, blank description or name.  
                     2.Attempting to change field values ​​to incorrect  
