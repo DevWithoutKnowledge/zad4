@@ -7,11 +7,11 @@
 ## General info
 Basic backend application in JavaScript for my Interpreted language applications subject.
 ## Technologies
-Project is created with:      
+Project is created with:     
     * knex version: 0.21.15   
     * koa version: 2.13.0   
     * postgresql version: 8.5.1  
-
+    
 ## App requirements:
 
 * Create a database that allows you to store data about goods and orders in the store. The database is to store the following data about individual entities in the system (all of them should be identifiable - identifier of any type):
