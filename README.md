@@ -21,12 +21,12 @@ Basic backend application in JavaScript for my Interpreted language applications
     * Order Status: download a complete list
 
 * In the server application, provide methods that enable all business logic methods to be executed over HTTP.
-      * Recommended API structure:  
+     * Recommended API structure:  
           * Product:  
-                     1.`GET app_url / products` - returns all products  
-                     2.`GET app_url / products / id` - returns product data with a specific identifier  
-                     3.`POST app_url / products` - adds a product to the database (parameters in the request body)  
-                     4.`PUT app_url / products / id` - updates the product with a specific identifier, other product parameters in the request body. Or you can PUT app_url / products with all parameters in the body of the request.  
+                1.`GET app_url / products` - returns all products  
+                2.`GET app_url / products / id` - returns product data with a specific identifier  
+                3.`POST app_url / products` - adds a product to the database (parameters in the request body)  
+                4.`PUT app_url / products / id` - updates the product with a specific identifier, other product parameters in the request body. Or you can PUT app_url / products with all parameters in the body of the request.  
           * Category:  
                      1.`GET app_url / categories` - returns all categories  
           * Orders:  
@@ -38,18 +38,18 @@ Basic backend application in JavaScript for my Interpreted language applications
                      1.`GET app_url / status` - returns all possible order statuses  
 
 * Implement error handling on the server side, in particular, handle the situations (it is recommended to send a response in the form of JSON + appropriate HTTP code):  
-          * Product:  
-                    1.Attempted to add with negative price or weight, zero weight and price, blank description or name.  
-                    2.Attempting to change field values ​​to incorrect  
-                    3.Attempt to change field values ​​for a non-existent identifier  
-          * Order:  
-               1.Attempting to add an order with empty user fields  
-               2.Attempting to add an order with incorrectly filled user fields (e.g. phone number contains letters)  
-               3.Change of status after canceling an order  
-               4.Attempt to add an order with items which IDs are not in the database  
-               5.Attempt to add an order with negative, zero, or numbered item quantities  
-               6.Changing the "back" status, e.g. from "COMPLETED" to "NOT APPROVED"  
-               7.Attempting to update order status with a non-existent ID  
+     * Product:  
+          1.Attempted to add with negative price or weight, zero weight and price, blank description or name.  
+          2.Attempting to change field values ​​to incorrect  
+          3.Attempt to change field values ​​for a non-existent identifier  
+     * Order:  
+          1.Attempting to add an order with empty user fields  
+          2.Attempting to add an order with incorrectly filled user fields (e.g. phone number contains letters)  
+          3.Change of status after canceling an order  
+          4.Attempt to add an order with items which IDs are not in the database  
+          5.Attempt to add an order with negative, zero, or numbered item quantities  
+          6.Changing the "back" status, e.g. from "COMPLETED" to "NOT APPROVED"  
+          7.Attempting to update order status with a non-existent ID  
 * The messages should be informative, i.e. they should contain detailed information for the user about the reason for the problem with the operation.  
 
 ## Setup
