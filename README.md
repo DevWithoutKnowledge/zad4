@@ -15,10 +15,10 @@ Project is created with:
 ## App requirements:
 
 * Create a database that allows you to store data about goods and orders in the store. The database is to store the following data about individual entities in the system (all of them should be identifiable - identifier of any type):  
-      * Product: name, description (both fields are text), unit price, unit weight (numbers with a comma), item category (one mandatory reference to the Category entity)  
-      * Category: name (text type) - Categories can be considered predefined, i.e. no API is needed for adding / removing them, but the set of allowed categories should be in the database. Categories have a flat structure, so there are no "subcategories"  
-      * Order: approval date (date, null allowed), order status (one obligatory reference to the Order Status entity) user name, email (both text types), telephone number (text type), list of ordered goods with the number of items of each item (number positive integers). You must add the appropriate tables in the database.  
-       * Order status: name (text type) - predefined in the database statuses: NOT APPROVED, APPROVED, CANCELED, COMPLETED (names can be translated into English)  
+  * Product: name, description (both fields are text), unit price, unit weight (numbers with a comma), item category (one mandatory reference to the Category entity)  
+  * Category: name (text type) - Categories can be considered predefined, i.e. no API is needed for adding / removing them, but the set of allowed categories should be in the database. Categories have a flat structure, so there are no "subcategories"  
+  * Order: approval date (date, null allowed), order status (one obligatory reference to the Order Status entity) user name, email (both text types), telephone number (text type), list of ordered goods with the number of items of each item (number positive integers). You must add the appropriate tables in the database.  
+   * Order status: name (text type) - predefined in the database statuses: NOT APPROVED, APPROVED, CANCELED, COMPLETED (names can be translated into English)  
 
 * In the server application, provide methods to enable the following database operations:
     * Product: displaying a complete list, displaying one item (by identifier), adding an item, changing an item (any property except the identifier)
