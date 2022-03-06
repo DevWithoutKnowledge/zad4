@@ -6,6 +6,22 @@
 
 ## General info
 Basic backend application in JavaScript for my Interpreted language applications subject.
+## Technologies
+Project is created with:
+    * "@koa/cors": "^3.1.0",
+    * "joi-phone-number": "^5.0.0",
+    * "knex": "^0.21.15",
+    * "koa": "^2.13.0",
+    * "koa-bodyparser": "^4.3.0",
+    * "koa-joi-router": "^7.0.0",
+    * "koa-morgan": "^1.0.1",
+    * "koa-parser": "^1.0.8",
+    * "koa-response-time": "^2.1.0",
+    * "koa-router": "^10.0.0",
+    * "pg": "^8.5.1",
+    * "postgres-migrations": "^5.1.0",
+    * "tree": "^0.1.3"
+
 ## App requirements:
 
 * Create a database that allows you to store data about goods and orders in the store. The database is to store the following data about individual entities in the system (all of them should be identifiable - identifier of any type):
@@ -28,14 +44,14 @@ Basic backend application in JavaScript for my Interpreted language applications
                 3.`POST app_url / products` - adds a product to the database (parameters in the request body)  
                 4.`PUT app_url / products / id` - updates the product with a specific identifier, other product parameters in the request body. Or you can PUT app_url / products with all parameters in the body of the request.  
           * Category:  
-                     1.`GET app_url / categories` - returns all categories  
+                1.`GET app_url / categories` - returns all categories  
           * Orders:  
-                     1.`GET app_url / orders` - returns all orders  
-                     2.`POST app_url / orders` - adds an order (parameters in the request body)  
-                     3.`PUT app_url / orders / id / state` - change of order status with the given identifier. Other variants are allowed, eg PUT app_url / orders / id with a new state in the request body.  
-                     4.`GET app_url / orders / status / id` - retrieve orders with a specific status  
+                1.`GET app_url / orders` - returns all orders  
+                2.`POST app_url / orders` - adds an order (parameters in the request body)  
+                3.`PUT app_url / orders / id / state` - change of order status with the given identifier. Other variants are allowed, eg PUT app_url / orders / id with a new state in the request body.  
+                4.`GET app_url / orders / status / id` - retrieve orders with a specific status  
           * Order Status:  
-                     1.`GET app_url / status` - returns all possible order statuses  
+                1.`GET app_url / status` - returns all possible order statuses  
 
 * Implement error handling on the server side, in particular, handle the situations (it is recommended to send a response in the form of JSON + appropriate HTTP code):  
      * Product:  
