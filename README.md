@@ -7,20 +7,10 @@
 ## General info
 Basic backend application in JavaScript for my Interpreted language applications subject.
 ## Technologies
-Project is created with:  
-    * "@koa/cors": "^3.1.0"  
-    * "joi-phone-number": "^5.0.0"  
-    * "knex": "^0.21.15"  
-    * "koa": "^2.13.0"  
-    * "koa-bodyparser": "^4.3.0"  
-    * "koa-joi-router": "^7.0.0"  
-    * "koa-morgan": "^1.0.1"   
-    * "koa-parser": "^1.0.8"   
-    * "koa-response-time": "^2.1.0"   
-    * "koa-router": "^10.0.0"    
-    * "pg": "^8.5.1"
-    * "postgres-migrations": "^5.1.0"  
-    * "tree": "^0.1.3"  
+Project is created with:    
+    * knex version: 0.21.15 
+    * koa version: 2.13.0 
+    * postgresql version: 8.5.1
 
 ## App requirements:
 
